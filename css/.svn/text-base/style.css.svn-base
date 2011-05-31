@@ -1,0 +1,383 @@
+body {
+background: #1f5a80;
+}
+
+@import url(http://fonts.googleapis.com/css?family=Oswald);
+
+p {
+color: #333;
+font-family: Georgia, Times New Roman, Times, sans-serif;
+font-size: 18px;
+line-height: 30px;
+margin-top: 10px;
+}
+
+p.italic {
+color: #7bb7df;
+font-style: italic;
+}
+
+h1 {
+padding: 15px 0 15px 0;
+color: #333;
+font-family: 'Oswald', arial, serif;
+font-size: 28px;
+font-weight: 400;
+border-bottom: 1px #7bb7df dashed;
+text-indent: 20px;
+}
+
+h2 {
+color: #333;
+font-family: 'Oswald', arial, serif;
+font-size: 28px;
+font-weight: 400;
+border-bottom: 1px #fff dashed;
+padding: 15px 0 15px 0;
+text-indent: 20px;
+}
+
+h3 {
+color: #fff;
+font-family: Georgia, Times New Roman, Times, sans-serif;
+font-size: 18px;
+line-height: 30px;
+margin-top: 10px;
+text-indent: 20px;
+font-style: italic;
+font-weight: normal;
+}
+
+sup {
+font-size: 8px;
+vertical-align: super;
+}
+
+sup a {
+color: white;
+}
+
+.number {
+color: white;
+}
+
+/********** Header **********/
+.wrapper {
+width: 960px;
+margin: 0 auto;
+}
+
+#superheader a {
+display: block;
+margin: 20px;
+width: 190px; height: 20px;
+background: url(../img/main_sprite.png) 0 -20px no-repeat;
+text-indent: -9999px;
+}
+
+#superheader a:hover {
+background: url(../img/main_sprite.png) 0 0 no-repeat;
+}
+
+#header-left {
+width: 480px; height: 180px;
+float: left;
+background: #fff;
+}
+
+#header-left p{
+padding: 0 20px;
+}
+
+#header-left em{
+color: #7bb7df;
+}
+
+#header-right{
+position: relative;
+width: 440px; height: 180px;
+float: left;
+padding: 0 20px;
+background:  #7bb7df url(../img/main_sprite.png) 25px -40px no-repeat;
+}
+
+#help {
+position: absolute;
+left: 270px; top: 5px;
+color: white;
+font-size: 26px;
+}
+
+#header-right em {
+position: absolute;
+left: 270px; top: 50px;
+color: white;
+font-size: 18px;
+}
+
+#header-right a {
+color: #333;
+font-family: 'Oswald', arial, serif;
+font-size: 28px;
+font-weight: 400;
+line-height: 35px;
+text-decoration: none;
+text-shadow: 0 1px #bddbef; 
+position: absolute;
+margin-right: 20px;
+left: 270px; top: 90px;
+}
+
+#header-right a:hover {
+color: white;
+}
+
+/********** Map **********/
+
+#map{
+float: left;
+width: 100%; height: 590px;
+background: #555;
+}
+
+/********** Content **********/
+#section1-left {
+width: 600px; height: 480px;
+float: left;
+background: #7bb7df url(../img/donations.png) 15px 105px no-repeat;
+}
+
+#section1-left h2 {
+text-shadow: 0 1px #bddbef;
+}
+
+#callout {
+margin: 20px 5px 0 0;
+float: right;
+width: 160px;
+}
+
+#callout p {
+line-height: 35px;
+text-shadow: 0 1px #bddbef; 
+text-align: center;
+color: #333;
+font-family: 'Oswald', arial, serif;
+font-size: 28px;
+font-weight: 400;
+}
+
+#callout p em{
+text-shadow: 0 0 #bddbef; 
+color: #fff;
+font-family: Georgia, Times New Roman, Times, sans-serif;
+font-size: 18px;
+}
+
+#section1-right {
+width: 320px; height: 480px;
+padding: 0 20px;
+float: left;
+background: #fff;
+}
+
+#section1-right a {
+color: #7bb7df;
+}
+
+#section1-right a:hover {
+color: #1f5a80;
+}
+
+#section1-right a:visited {
+color: #1f5a80;
+}
+
+#section2 {
+margin-top: 20px;
+width: 100%;
+float: left;
+background: #cf9090;
+}
+
+#section2 h2 {
+text-shadow: 0 1px #e7c7c7;
+}
+
+.section2-column1 {
+float: left;
+border-right: 1px #fff dashed;
+width: 479px;
+}
+
+.section2-column2 {
+float: left;
+width: 479px;
+}
+
+#section2-income {
+position: relative;
+height: 420px;
+background: url(../img/income.png) 20px 40px no-repeat;
+border-bottom: 1px #fff dashed;
+}
+
+#section2-income ul {
+position: absolute;
+top: 270px; left: 45px;
+}
+
+#section2-income li {
+float: left;
+margin-left: 23px;
+width: 100px;
+font-family: Arial, Helvetica, sans-serif;
+font-size: 12px;
+color: #333;
+line-height: 15px;
+text-shadow: 0 1px #e7c7c7;
+font-weight: bold;
+text-align: center;
+}
+
+#section2-income p{
+line-height: 35px;
+color: #333;
+font-family: 'Oswald', arial, serif;
+font-size: 28px;
+font-weight: 400;
+text-shadow: 0 1px #e7c7c7;
+text-align: center;
+position: absolute;
+top: 320px; left;
+}
+
+#section2-gender {
+height: 250px;
+}
+
+#section2-gender div{
+line-height: 35px;
+color: #333;
+font-family: 'Oswald', arial, serif;
+font-size: 28px;
+font-weight: 400;
+text-shadow: 0 1px #e7c7c7;
+}
+
+#female{
+float: left;
+width: 99px; height: 150px;
+padding: 50px 0 0 140px;
+background: url(../img/gender_female.png) 20px 20px no-repeat;
+border-right: 1px #a86060 dashed;
+}
+
+#male{
+float: left;
+width: 99px; height: 150px;
+padding: 50px 0 0 140px;
+background: url(../img/gender_male.png) 60px 70px no-repeat;
+}
+
+#section2-ethnicity {
+width: 480px; height: 360px;
+background: url(../img/ethnicity.png) 0 30px no-repeat;
+border-bottom: 1px #fff dashed;
+}
+
+#section2-ethnicity p {
+margin: 260px 20px 0 20px;
+font-family: Arial;
+font-size: 11px;
+line-height: 14px;
+}
+
+#section2-age {
+position: relative;
+width: 480px; height: 310px;
+background: url(../img/age.png) 20px 40px no-repeat;
+}
+
+#section2-age ul {
+position: absolute;
+top: 250px; left: 40px;
+}
+
+#section2-age li {
+float: left;
+margin-left: -4px;
+width: 62px;
+font-family: Arial, Helvetica, sans-serif;
+font-size: 12px;
+color: #333;
+line-height: 15px;
+text-shadow: 0 1px #e7c7c7;
+font-weight: bold;
+text-align: center;
+}
+
+#section2-age p {
+position: absolute;
+top: 260px; left: 240px;
+font-family: Arial, Helvetica, sans-serif;
+font-size: 12px;
+color: #333;
+line-height: 15px;
+text-shadow: 0 1px #e7c7c7;
+font-weight: bold;
+}
+
+/********** Footer **********/
+
+#footer {
+position: relative;
+margin-top: 20px;
+width: 100%; height: 100px;
+float: left;
+background: #7bb7df url(../img/main_sprite.png) 20px -220px no-repeat;
+}
+
+#footer em {
+color: white;
+position: absolute;
+left: 365px; top: 20px;
+width: 300px;
+}
+
+#footer a {
+color: #333;
+font-family: 'Oswald', arial, serif;
+font-size: 28px;
+font-weight: 400;
+line-height: 35px;
+text-decoration: none;
+text-shadow: 0 1px #bddbef; 
+position: absolute;
+margin-right: 20px;
+left: 730px; top: 30px;
+}
+
+#footer a:hover {
+color: white;
+}
+
+#superfooter p {
+line-height: 18px;
+padding: 0 20px 20px 0;
+font-family: Arial, helvetica, sans-serif;
+font-size: 12px;
+color: white;
+float: left;
+}
+
+#superfooter a {
+color: white;
+text-decoration: none;
+font-weight: bold;
+}
+
+p#references {
+padding-right: 0;
+float: right;
+}

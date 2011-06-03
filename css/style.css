@@ -222,6 +222,21 @@ div.olControlZoomOutItemInactive {
 	padding-bottom: 25px !important;
 }
 
+.wax-tooltip.ie {
+	background: url(../../images/mask75.png) !important;
+	/*
+	width: 190px !important;
+	max-height: 340px !important;
+	border: none;
+	box-shadow: none !important;
+	-moz-box-shadow: none !important;
+	-webkit-box-shadow: none !important;
+	z-index: 9999 !important;
+	padding-bottom: 25px !important;
+	*/
+}
+
+
 .overlay-content img {
 	padding: 2px 2px 0 0;
 }

@@ -158,6 +158,70 @@ height: 590px !important;
 background: #555 !important;
 }
 
+.olControlZoomPanel div {
+	background: url('../img/zoom.png') 0 0 !important;
+	width: 24px !important;
+	height: 27px !important;
+	padding: none !important;
+	margin: none !important;
+}
+
+.olControlZoomToMaxExtentItemInactive {
+	display: none;
+}
+
+div.olControlZoomOutItemInactive {
+	background-position:  -24px 0 !important;
+	top: 0 !important;
+	left: 24px !important;
+}
+
+.wax-tooltip {
+	background: url('../img/overlay.png') left bottom no-repeat !important;
+	width: 190px !important;
+	max-height: 340px !important;
+	border: none;
+	box-shadow: none !important;
+	-moz-box-shadow: none !important;
+	-webkit-box-shadow: none !important;
+	z-index: 9999 !important;
+	padding-bottom: 25px !important;
+}
+
+.overlay-content img {
+	padding: 2px 2px 0 0;
+}
+
+
+.overlay-content .people-icons{
+	float: left;
+	width: 120px;
+	height: 80px;	
+	
+}
+
+.overlay-content .adults, .overlay-content .children {
+	float: left;
+}
+
+.overlay-content .people-count {
+	float: left;
+	width: 65px;
+}
+
+.overlay-content hr {
+	clear: both;
+	width: 190px;
+	border: #eee solid 1px;
+}
+
+.overlay-content .items-rec {
+	display: block;
+}
+
+.overlay-content .label, .overlay-content .people-count {
+	font-weight: bold;
+}
 
 /********** Content **********/
 #section1-left {

@@ -17,5 +17,8 @@ $(document).ready(function() {
 	      });
 	    }
 	  });
+	  $('.olControlZoomPanel div').click(function() {
+	  	$('.wax-tooltip').hide();
+	  });
 	}); 
 });

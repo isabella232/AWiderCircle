@@ -214,6 +214,8 @@ div.olControlZoomOutItemInactive {
 .overlay-content .people-count {
 	float: left;
 	width: 65px;
+	text-align: right;
+	line-height: 2.8em;
 }
 
 .wax-tooltip hr {

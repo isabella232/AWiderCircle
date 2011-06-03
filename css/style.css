@@ -176,6 +176,13 @@ div.olControlZoomOutItemInactive {
 	left: 24px !important;
 }
 
+.wax-tooltip.flip {
+	background: url('../img/overlay-flip.png') left top no-repeat !important;
+	padding-bottom: 15px !important;
+	padding-top: 25px !important;
+}
+
+
 .wax-tooltip {
 	background: url('../img/overlay.png') left bottom no-repeat !important;
 	width: 190px !important;

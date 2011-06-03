@@ -1,11 +1,121 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <meta charset='utf-8'>
-  <!-- via github -->
-</head>
-
-<body>
-  
-</body>
+	<head>
+		<link rel="shortcut icon" type="image/ico" href="img/favicon.ico"/>
+		<title>A Wider Circle Neighbor-to-Neighbor Program</title>
+		<script src='js/jquery-1.5.min.js'></script>
+		<script src='js/site.js'></script>
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Oswald">
+		<link rel="stylesheet" type="text/css" href="css/reset.css">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<!--[if IE]>
+		<style type="text/css">
+			.wax-tooltip {background: url(http://tiles.mapbox.com/images/mask75.png) !important;}
+		</style>
+		<![endif]-->
+	</head>
+	<body>
+	
+	<! --------Header-------- >
+	
+	<div class="wrapper">
+		<div id="superheader"><a href="http://www.awidercircle.org/">A Wider Circle</a></div>
+		<div id="header">
+			<div id="header-left">
+				<h1>The Neighbor-to-Neighbor Program</h1>
+				<p>provides furniture and other home items to families living without these basics.</p>
+				<p><em>Browse the map below to see who we've helped.</em></p>
+			</div>
+			<div id="header-right">
+				<div class="top"></div>
+				<p id="help">Want to help?</p>
+				<p><em>got stuff?</em></p>
+				<a href="http://awidercircle.org/donorform.php">Fill Out Our Donation Form</a>
+				<div class="bottom"></div>
+			</div>
+		</div>
+		<div id="key"></div>
+	</div>
+	
+	<! --------Map-------- >
+	<div id="shadowtop"></div>
+	<div id='ts-embed-1307121296226-script'><script src='http://tiles.mapbox.com/dhcole/api/v1/embed.js?api=ol&size%5B%5D=960&size%5B%5D=588&center%5B%5D=-77.012937037187&center%5B%5D=38.913793178492&center%5B%5D=14&layers%5B%5D=world-light-dc&layers%5B%5D=world-light&layers%5B%5D=awc-world-light-usa-11-12&layers%5B%5D=awc-world-light-usa-7-10&layers%5B%5D=awc-zips-4&layers%5B%5D=dc-bright&layers%5B%5D=awc-addresses-rec-6&layers%5B%5D=awc-addresses-don-6&options%5B%5D=legend&options%5B%5D=zoompan&options%5B%5D=tooltips&el=ts-embed-1307121296226'></script></div> 
+	<div id="shadowbottom"></div>
+	<! --------Content-------- >
+	
+	<div class="wrapper">
+		<div id="section1">
+			<div id="section1-left">
+				<div class="top"></div>
+				<h2>What We Donated in 2010</h2>
+				<h3>Neighbor-to-Neighbor Donations</h3>
+					<div id="callout">
+						<p><span class="number">21,893</span><br>Total<br>Items</p>
+						<p><em>given to</em></p>
+						<p><span class="number">2,723</span> Households</p>
+					</div>
+					<div class="bottom"></div>
+				</div>
+			<div id="section1-right">
+				<p><em>The Neighbor-to-Neighbor Program, <a href="http://www.awidercircle.org/">A Wider Circle's</a> largest program, helps families moving out of shelters or otherwise living without their basic need items.</em></p>
+				<p>The most commonly requested items are beds, dressers, and kitchen tables, truly the basic necessities for the home. By providing these items to families in need, we're helping to create the stability and independence that all families deserve.</p>
+			</div>
+		</div>
+		<div id="section2">
+			<div class="top"></div>
+			<h2>Who We Helped in 2010: Recipient Demographics</h2>
+			<div class="section2-column1">
+				<div id="section2-income">
+					<h3>Median Monthly Income</h3>
+					<ul>
+						<li>Neighbor-to-Neighbor recipient Median</li>
+						<li>Washington D.C. Median<sup><a href="#references">1</a></sup><br>(2008)</li>
+						<li>U.S. Median<sup><a href="#references">2</a></sup> (2008)</li>
+					</ul>
+					<p>The median income of households we serve is <span class="number">$700</span> a month.</p>
+				</div>
+				<div id="section2-gender">
+					<h3>Gender</h3>
+					<div id="female"><span class="number">82%</span><br> Female</div>
+					<div id="male"><span class="number">12%</span><br> Male</div>
+				</div>
+			</div>
+			<div class="section2-column2">
+				<div id="section2-ethnicity">
+					<h3>Ethnicity</h3>
+					<p> <strong>*Includes:</strong> African/African American, African American/Asian, African American/Carribean, African American/Caucasian, African American/Latino, African American/Other, American Indian, Asian, Carribean, Caucasian/Latino, Caucasian/Other, Did not disclose, Middle Eastern, Mutli-Ethnic, N/A, Other, and South Asian</p>
+				</div>
+				<div id="section2-age">
+					<h3>Age</h3>
+					<ul>
+						<li>17 & under</li>
+						<li>18-25</li>
+						<li>26-35</li>
+						<li>35-45</li>
+						<li>46-55</li>
+						<li>56-61</li>
+						<li>62 & over</li>
+					</ul>
+					<p>Age group</p>
+				</div>
+			</div>
+			<div class="bottom"></div>
+		</div>
+	<! --------Footer-------- >
+	
+		<div id="footer">
+			<div class="top"></div>
+			<p><em>Have items to give away? A Wider Circle can pick up at your location.</em></p>
+			<a href="http://awidercircle.org/donorform.php">Schedule a Pickup</a>
+			<div class="bottom"></div>
+		</div>
+		<div id="superfooter">
+			<p>&#169; A Wider Circle</p>
+			<p>Powered by open data from <a target="_blank" href="http://www.usgs.gov">USGS</a><br>
+        &amp; open source from <a target="_blank" href="http://tilemill.com">TileMill</a>.
+    		<p id="references"><sup><a href="#section2-income">1</a>,</sup><sup><a href="#section2-income">2</a></sup>National and D.C. income data from <a href="http://www.census.gov/compendia/statab/cats/income_expenditures_poverty_wealth.html">2008 US Census</a></p>
+		</div>
+	</div>
+	
+	</body>
 </html>

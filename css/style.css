@@ -216,18 +216,30 @@ div.olControlZoomOutItemInactive {
 	width: 65px;
 }
 
-.overlay-content hr {
+.wax-tooltip hr {
 	clear: both;
 	width: 190px;
-	border: #eee solid 1px;
+	border: none;
+	border-top: #ccc dashed 1px;
 }
 
 .overlay-content .items-rec {
 	display: block;
 }
 
-.overlay-content .label, .overlay-content .people-count {
+.overlay-content .people-count {
 	font-weight: bold;
+}
+
+.wax-tooltip .items-list {
+	line-height: 1.2em;
+	font-weight: bold;
+}
+
+.wax-tooltip .big-number {
+	font-size: 24px;
+	font-weight: bold;
+	padding: 8px 0;
 }
 
 /********** Content **********/

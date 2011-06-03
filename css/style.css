@@ -203,7 +203,9 @@ div.olControlZoomOutItemInactive {
 .overlay-content .people-icons{
 	float: left;
 	width: 120px;
-	height: 80px;	
+	max-height: 90px;	
+	min-height: 40px;
+	overflow: hidden;
 	
 }
 

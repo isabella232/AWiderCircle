@@ -3,7 +3,6 @@
 $(document).ready(function() {		
 	// overlays follow cursor
 	if($.browser.msie) {
-		break;
 	} else {
 		$(document).mousemove(function(e){
 		  $('.wax-tooltip:not(.hidden)').each(function() {

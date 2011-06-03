@@ -2,7 +2,6 @@ body {
 background: #1f5a80;
 }
 
-
 p {
 color: #333;
 font-family: Georgia, Times New Roman, Times, sans-serif;
@@ -171,8 +170,8 @@ z-index: 1;
 #key {
 background: url(../img/key.png) no-repeat;
 height: 85px; width: 260px;
-position: absolute;
-top: 735px; left: 10px;
+position: relative;
+top: 670px; left: 0;
 z-index: 1;
 }
 

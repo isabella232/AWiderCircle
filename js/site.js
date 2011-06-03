@@ -3,7 +3,7 @@
 $(document).ready(function() {		
 	// overlays follow cursor
 	if($.browser.msie) {
-		$('.wax-tooltip').css('background: url(http://tiles.mapbox.com/images/mask75.png)');
+		break;
 	} else {
 		$(document).mousemove(function(e){
 		  $('.wax-tooltip:not(.hidden)').each(function() {

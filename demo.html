@@ -3,7 +3,6 @@
 		<link rel="shortcut icon" type="image/ico" href="img/favicon.ico"/>
 		<title>A Wider Circle Neighbor-to-Neighbor Program</title>
 		<script src='js/jquery-1.5.min.js'></script>
-		<script src='js/site.js'></script>
     <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Oswald">
 		<link rel="stylesheet" type="text/css" href="css/reset.css">
 		<link rel="stylesheet" type="text/css" href="css/style.css">
@@ -17,11 +16,40 @@
 				width: 100% !important;
 			}
 			#key {
+				position: absolute;
 				bottom: 10px;
 				left: 10px;
 				top: auto;
 			}
 		</style>
+		<script type="text/javascript">
+			$(document).ready(function() {		
+				// overlays follow cursor
+				if($.browser.msie) {
+					break;
+				} else {
+					$(document).mousemove(function(e){
+					  $('.wax-tooltip:not(.hidden)').each(function() {
+					  	if($(this).height() < e.pageY ) {
+					      $(this).offset({
+						      top: e.pageY - $(this).height() - 45,
+						      left: e.pageX - 110
+					      });
+					    } else {
+					    	$(this).addClass('flip');
+					      $(this).offset({
+						      top: e.pageY + 15,
+						      left: e.pageX - 110
+					      });
+					    }
+					  });
+					  $('.olControlZoomPanel div').click(function() {
+					  	$('.wax-tooltip').hide();
+					  });
+					}); 
+				}
+			});
+		</script>
 	</head>
 	<body>
 	<div id="key"></div>

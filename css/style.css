@@ -150,12 +150,39 @@ color: white;
 
 /********** Map **********/
 
+#shadowtop {
+background: url(../img/mapshadow.png) 0 0 repeat-x;
+height: 10px; width: 100%;
+float: left;
+position: absolute;
+top: 240px;
+z-index: 1;
+}
+
+#shadowbottom {
+background: url(../img/mapshadow.png) 0 -10px repeat-x;
+height: 10px; width: 100%;
+float: left;
+position: absolute;
+top: 820px;
+z-index: 1;
+}
+
+#key {
+background: url(../img/key.png) no-repeat;
+height: 85px; width: 260px;
+position: absolute;
+top: 735px; left: 10px;
+z-index: 1;
+}
+
 .map, .olMap {
 float: left;
-top: 240px;
 width: 100% !important; 
 height: 590px !important;
 background: #555 !important;
+z-index: 0;
+position: relative;
 }
 
 .olControlZoomPanel div {

@@ -83,7 +83,7 @@ margin: 0 auto;
 #superheader {
   position: relative;
 }
-#superheader a {
+#superheader a#logo {
 display: block;
 margin: 20px;
 width: 190px; height: 20px;

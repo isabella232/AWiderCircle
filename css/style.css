@@ -80,7 +80,9 @@ z-index: 1;
 width: 960px;
 margin: 0 auto;
 }
-
+#superheader {
+  position: relative;
+}
 #superheader a {
 display: block;
 margin: 20px;
@@ -520,3 +522,19 @@ padding-right: 0;
 float: right;
 }
 
+ul.share-links {
+  position: absolute;
+  top: 0;
+  right: 0;
+  }
+ul.share-links li.facebook {
+  width: 53px;
+  overflow: hidden;
+  }
+ul.share-links li {
+  float: left;
+  }
+ul.share-links li a {
+  display: block;
+  text-indent: -99999px;
+  }

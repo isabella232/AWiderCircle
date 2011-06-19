@@ -177,30 +177,33 @@ color: white;
   z-index: 1;
   }
 
-#ts-map {
-  float: left;
+#map {
   width: 100% !important;
   height: 590px !important;
   z-index: 0;
-  position: relative;
+  position: absolute;
+  top: 240px;
   }
 
-.olControlZoomPanel div {
+.zoomer {
 	background: url('../img/zoom.png') 0 0 !important;
 	width: 24px !important;
 	height: 27px !important;
 	padding: none !important;
 	margin: none !important;
+	border: none;
+	border-radius: 0!important;
+		-moz-border-radius: 0!important;
+		-webkit-border-radius: 0!important;
   }
 
-.olControlZoomToMaxExtentItemInactive {
-	display: none;
-  }
+.zoomin {
+	left: 25px;
+	}
 
-div.olControlZoomOutItemInactive {
+.zoomout {
 	background-position:  -24px 0 !important;
-	top: 0 !important;
-	left: 24px !important;
+	left: 49px;
   }
 
 .wax-tooltip.flip {
@@ -219,6 +222,8 @@ div.olControlZoomOutItemInactive {
 	-webkit-box-shadow: none !important;
 	z-index: 9999 !important;
 	padding-bottom: 25px !important;
+	right: -9000px;
+	color: white;
   }
 
 .overlay-content img {
@@ -272,6 +277,11 @@ div.olControlZoomOutItemInactive {
 }
 
 /********** Content **********/
+
+#content {
+	position: relative;
+	top: 590px;
+	}
 #section1-left {
   width: 600px; height: 480px;
   float: left;

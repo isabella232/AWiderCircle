@@ -4,8 +4,6 @@
 var m,d,r;
 var mm = com.modestmaps;
 
-// map and interactivity behavior
-
 $(document).ready(function() {
 
 	// Build the Map
@@ -62,34 +60,45 @@ $(document).ready(function() {
 	d.setCenterZoom(new mm.Location(38.913793178492,-77.012937037187), 14);
 
 
-  // overlays follow cursor
+  // overlay behavoirs
   
-  if (!$.browser.msie) {
-      $(document).mousemove(function(e) {
-          $('.wax-tooltip:not(.hidden)').each(function() {
-              if ($(this).height() + 300 < e.pageY) {
-                  $(this).offset({
-                      top: e.pageY - $(this).height() - 45,
-                      left: e.pageX - 110
-                  });
-              } else {
-                  $(this).addClass('flip');
-                  $(this).offset({
-                      top: e.pageY + 15,
-                      left: e.pageX - 110
-                  });
-              }
-            	$('.waxtooltip').flter(':first').hide();
-          });
-      });
-      $('.olControlZoomPanel div').click(function() {
-          $('.wax-tooltip').hide();
-      });
-      
-  }
+  var overlays = '',
+  		nOverlays = 1;
+  		
+  $('#map').mousemove(function(e) {
+    $('.wax-tooltip:not(.hidden)').each(function() {
+
+			// surpress duplicate overlays
+			if($('.wax-tooltip').length > 1) { 
+				nOverlays = parseInt($('.wax-tooltip').length) - 1;
+			  overlays = '.wax-tooltip:lt('+nOverlays+')';
+				$(overlays).remove();
+			}		
+
+			// follow cursor
+      if ($(this).height() + 300 < e.pageY) {
+        $(this).offset({
+          top: e.pageY - $(this).height() - 45,
+          left: e.pageX - 110
+        });
+      } else {
+        $(this).addClass('flip');
+        $(this).offset({
+          top: e.pageY + 15,
+          left: e.pageX - 110
+        });
+      }
+			
+    });
+  }); 
 });
 
 var hideOutOfRange = function(z) {
+
+  //remove any residual overlays after zooming
+  $('.wax-tooltip').remove();
+
+  //hide layers that don't match this zoom extent
   if(z<11) {
 	  r.setProvider(new wax.mm.provider({
 	    baseUrl: '',

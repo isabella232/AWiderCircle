@@ -1,0 +1,44 @@
+<html>
+	<head>
+		<title></title>
+		
+  	<script src='js/modestmaps.min.js' type='text/javascript'></script>
+    <script src='js/wax.mm.min.js' type='text/javascript'></script>
+
+		<link rel='stylesheet' type='text/css' href='css/controls.css' />
+		<link rel="stylesheet" type="text/css" href="css/reset.css">
+		<link rel="stylesheet" type="text/css" href="css/style-staging.css">
+		<style>.map-tile {
+  opacity:0;
+  }
+
+.map-tile-loaded {
+  -webkit-animation-name: 'fade-in';
+  -webkit-animation-timing-function: ease-in;
+  -webkit-animation-duration: .5s;
+  }
+
+@-webkit-keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+  }</style>
+	</head>
+	<body>
+	<div id='tilejson-url'></div>
+	
+	<script type="text/javascript">
+    var url = 'http://a.staging.mapbox.com/dhcole/1.0.0/mapbox.world-light,tornado3-1953/layer.json';
+    wax.tilejson(url, function(tilejson) {
+      var mm = com.modestmaps;
+      var m = new mm.Map('tilejson-url',
+        new wax.mm.connector(tilejson),
+        new mm.Point(800,400));
+      m.setCenterZoom(new mm.Location(39, -98), 5);
+    });
+  </script>
+	</body>
+</html>

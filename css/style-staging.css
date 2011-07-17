@@ -180,9 +180,16 @@ color: white;
 #map {
   width: 100% !important;
   height: 590px !important;
-  z-index: 0;
+  }
+
+#mapbox {
+  width: 100% !important;
+  height: 590px !important;
+  z-index: -1;
   position: absolute;
   top: 240px;
+  overflow: hidden;
+  background: #eee url(../img/bg.png);
   }
 
 .zoomer {
@@ -206,14 +213,18 @@ color: white;
 	left: 49px;
   }
 
-.wax-tooltip.flip {
+.desktop .wax-tooltip.flip {
 	background: url('../img/overlay-flip.png') left top no-repeat !important;
 	padding-bottom: 15px !important;
 	padding-top: 25px !important;
   }
 
-.wax-tooltip {
+.desktop .wax-tooltip {
 	background: url('../img/overlay.png') left bottom no-repeat !important;
+  }
+
+.wax-tooltip {
+  background:transparent url(../img/overlay-m.png) repeat;
 	width: 190px !important;
 	max-height: 340px !important;
 	border: none;
@@ -222,9 +233,13 @@ color: white;
 	-webkit-box-shadow: none !important;
 	z-index: 9999 !important;
 	padding-bottom: 25px !important;
-	right: -9000px;
+	border: none !important;
 	color: white;
+  opacity:1;
+  -moz-transition:opacity 1s;
+  -webkit-transition:opacity 1s;
   }
+
 
 .overlay-content img {
 	padding: 2px 2px 0 0;
@@ -544,3 +559,22 @@ ul.share-links li a {
   display: block;
   text-indent: -99999px;
   }
+  
+.map-tile {
+  opacity:0;
+}
+
+.map-tile-loaded {
+  -webkit-animation-name: 'fade-in';
+  -webkit-animation-timing-function: ease-in;
+  -webkit-animation-duration: .1s;
+}
+
+@-webkit-keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

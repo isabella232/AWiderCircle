@@ -4,20 +4,13 @@
 		<link rel="shortcut icon" type="image/ico" href="img/favicon.ico"/>
 		<title>A Wider Circle Neighbor-to-Neighbor Program</title>
 		<script src='js/jquery-1.5.min.js'></script>
-  	<script src='js/OpenLayers.js'></script>
-  	<script src='js/wax.ol.js'></script>
-  	<script src='js/site.js'></script>
+  	<script src='js/modestmaps.min.js' type='text/javascript'></script>
+    <script src='js/wax.mm.min.js' type='text/javascript'></script>
+
     <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Oswald">
-		<link rel="stylesheet" type="text/css" href="css/controls_default.css">
+		<link rel='stylesheet' type='text/css' href='css/controls.css' />
 		<link rel="stylesheet" type="text/css" href="css/reset.css">
-		<link rel="stylesheet" type="text/css" href="css/style.css">
-		<!--[if IE]>
-		<style type="text/css">
-      .wax-tooltip {
-        background: url(http://tiles.mapbox.com/images/mask75.png) !important;
-      }
-		</style>
-		<![endif]-->
+		<link rel="stylesheet" type="text/css" href="css/style-staging.css">
 	</head>
 	<body>
 	<div class="wrapper">
@@ -50,10 +43,10 @@
 	</div>
 
 	<div id='shadowtop'></div>
-    <div id='ts-map'></div>
+  <div id='mapbox'><div id='map' class='map'></div></div>
 	<div id='shadowbottom'></div>
 
-	<div class='wrapper'>
+	<div id='content' class='wrapper'>
 		<div id='section1'>
 			<div id='section1-left'>
 				<div class='top'></div>
@@ -124,6 +117,7 @@
     		<p id="references"><sup><a href="#section2-income">1</a>,</sup><sup><a href="#section2-income">2</a></sup>National and D.C. income data from <a href="http://www.census.gov/compendia/statab/cats/income_expenditures_poverty_wealth.html">2008 US Census</a></p>
 		</div>
 	</div>
+	  	<script src='js/site-staging.js'></script>
    <script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
 	</body>
 </html>

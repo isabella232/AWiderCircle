@@ -578,3 +578,10 @@ ul.share-links li a {
     opacity: 1;
   }
 }
+
+.wax-tooltip {
+  -webkit-animation-name: 'fade-in';
+  -webkit-animation-timing-function: ease-in;
+  -webkit-animation-duration: .1s;
+
+}

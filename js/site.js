@@ -1,6 +1,6 @@
 var m,d,r,touchPosition,
     mm = com.modestmaps;
-    url = 'http://a.staging.mapbox.com/awidercircle/1.0.0/'
+    url = 'http://a.tiles.mapbox.com/awidercircle/1.0.0/'
       +'mapbox.world-light,awc-world-light-dc,mapbox.dc-bright,awc-addresses-rec,awc-addresses-don,awc-zips'
       +'/layer.json';
 

@@ -1,7 +1,7 @@
 var m,d,r,touchPosition,
     mm = com.modestmaps;
     url = 'http://a.tiles.mapbox.com/awidercircle/1.0.0/'
-      +'mapbox.world-light,awc-world-light-dc,mapbox.dc-bright,awc-addresses-rec,awc-addresses-don,awc-zips'
+      +'awidercircle.awc-world-light-dc,mapbox.world-light,mapbox.dc-bright,awidercircle.awc_dc_street,awidercircle.awc_all_zip'
       +'/layer.json';
 
 function is_touch_device() {  

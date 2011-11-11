@@ -590,12 +590,12 @@ ul.share-links li a {
 #caption-wrapper {
   position: absolute;
   bottom: 0px;
-  left: 0px;
+  right: 0px;
   width: 700px;
-  height: 135px;
+  height: 145px;
   background-color: #ffffff;
   border: 1px #ddd solid;
-  margin: 10px 10px 20px 10px;
+  margin: 10px;
   border-radius: 3px;
   }
   #caption-wrapper a#logo {

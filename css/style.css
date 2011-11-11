@@ -589,29 +589,27 @@ ul.share-links li a {
 
 #caption-wrapper {
   position: absolute;
-  top: 0px;
+  bottom: 0px;
   left: 0px;
+  width: 700px;
+  height: 135px;
   background-color: #ffffff;
-  width: 100%;
-  border-bottom: 5px #333 solid;
+  border: 1px #ddd solid;
+  margin: 10px 10px 20px 10px;
+  border-radius: 3px;
   }
   #caption-wrapper a#logo {
     background: url(../img/main_sprite.png) -236px -20px no-repeat;
     float: left;
-    margin: 45px 20px 0 20px;
     }
   #caption-wrapper h1 {
-    border-left: 2px #333 dashed;
-    border-bottom: none;
-    float: left;
-    padding: 40px 20px;
+    border-bottom: 2px #999 dashed;
     text-indent: 0;
     color: #333;
     }
   #caption-wrapper p {
-    float: left;
-    max-width: 500px;
-    padding: 10px 0;
+    clear: left;
+    padding: 10px 0 0 20px;
     margin: 0;
     color: #333;
   }
